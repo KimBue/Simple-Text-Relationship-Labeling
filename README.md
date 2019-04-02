@@ -1,4 +1,4 @@
-# Fast-Text_Realationship-Labeling
+# Simple-Text-Realationship-Labeling
 This is a very simple tool to quickly label relationships between texts with files as inputs. 
 
 ## Usage
