@@ -36,6 +36,7 @@ class LabelTexts:
                 continue #get to he start line
             index = l.split()
             self.label(int(index[0]), (int(index[1])))
+            print("Candidate Number " + str(counter) +" labeled. Next one...")
 
     def label(self, indexA, indexB):
         textA = self.leftFileReader.getLine(indexA)
