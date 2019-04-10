@@ -54,6 +54,10 @@ def labelInput(labels):
         userInput = input("Please type a correct Label Number")
         if userInput in labels:
             return userInput
+def print_metadata(metadata_left, metadata_right, columnsize):
+    spaces = " "*(5+columnsize-len(metadata_left))
+    print(bcolors.WARNING + metadata_left + spaces + metadata_right + bcolors.ENDC)
 
 if __name__ == '__main__':
+    print_metadata("15.04.2015", "17.03.2016", 50)
     printTexts("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ", "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 50)
